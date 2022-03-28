@@ -14,6 +14,9 @@
 
  export const set_user='set_user'
 
+ export const addfav='addfav'
+
+
 
 
 //tipos de acciones

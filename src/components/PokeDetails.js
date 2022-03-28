@@ -19,7 +19,7 @@ const PokeDetails = () => {
     useEffect(() => {
    dispatch(loadPokeName(pokemonName))
 
-    }, )
+    },[] )
 
       //  view store
         let viewPoke = useSelector((state) => {

@@ -2,7 +2,6 @@ import * as types from '../types';
 import {  getAuth, createUserWithEmailAndPassword} from "@firebase/auth";
 
 
-
 const registerStart=() =>({
 
   type: types.register_start,

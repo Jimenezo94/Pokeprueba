@@ -6,6 +6,7 @@ import {
     LOAD_POKE_SUCCESS,
     LOAD_POKE_FAILURE,
     SEARCH,
+    addfav,
                        } from '../types.js'
 
 import axios from 'axios'
@@ -79,3 +80,15 @@ export const loadPokeName = (pokemonName) =>{
         }
         }
         
+        export const addTofav =(item)=>{
+            return async (dispatch) =>{
+                try{
+                    dispatch({type:addfav, payload:item})
+                }
+                catch(err){
+                    console.log('nokas')
+
+                }
+
+            }
+        }

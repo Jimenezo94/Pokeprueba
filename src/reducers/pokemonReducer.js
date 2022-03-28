@@ -11,12 +11,20 @@ let initialState = {
     search:'',
     user: null,
     error:null,
+    favoritos:[]
 }
 
 const pokeReducer = (state = initialState, action) =>{
   let {type, payload} = action
   switch(type){
        
+
+      case types.addfav:
+          const Agregandofav = [...state.favoritos , action.payload]
+          return{
+              ...state, 
+              favoritos:Agregandofav,
+          }
       case types.LOAD_DATA_REQUEST:
           return{
               ...state,

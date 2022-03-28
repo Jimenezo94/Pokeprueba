@@ -19,13 +19,13 @@ function Login() {
     setEmail("")
     setPassword("")
   }
-  const singInGoogle = (e)=>{
+  // const singInGoogle = (e)=>{
 
-    e.preventDefault();
-    dispatch(loginGoogle())
-    setEmail("")
-    setPassword("")
-  }
+  //   e.preventDefault();
+  //   dispatch(loginGoogle())
+  //   setEmail("")
+  //   setPassword("")
+  // }
   let estados = useSelector((state) => {
     return state[POKE_KEY];
   
@@ -35,8 +35,7 @@ function Login() {
        dispatch(loginGoogle());
   }
   useEffect(()=>{
-    console.log("siiii")
-    console.log(estados.user)
+
     if(estados.user){
     //history.push("/")
     console.log("history")
@@ -44,9 +43,7 @@ function Login() {
       },[estados.user, dispatch])
   return (
     <div className="login">
-      <NavLink to="login">
-        <img src="" alt="logo" className="login-log" />
-      </NavLink>
+     
       <div className="login-container">
         <h1>Sign In</h1>
         <form action="">

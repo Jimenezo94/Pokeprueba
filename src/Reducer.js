@@ -3,11 +3,11 @@ import pokeReducer, {POKE_KEY} from './reducers/pokemonReducer'
 import {combineReducers} from 'redux';
 
 
- const rootReducer = combineReducers({
-[POKE_KEY] : pokeReducer
+ const Reducer = combineReducers({
+   [POKE_KEY] : pokeReducer
 })
 
-export default rootReducer;
+export default Reducer;
 
 
 

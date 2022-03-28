@@ -3,7 +3,6 @@ import {useSelector, useDispatch } from 'react-redux'
 import { actualizar, searchPokemon } from '../actions/pokeactions'
 import { POKE_KEY } from '../reducers/pokemonReducer';
 
-
 const SearchBar = () => {
 
     let dispatch = useDispatch () 
@@ -61,7 +60,7 @@ const SearchBar = () => {
 
   return (
    
-         <div className='Searcher wrapper'>
+  <div className='Searcher wrapper'>
 
              
 <form htmlFor='for'>
@@ -72,8 +71,7 @@ const SearchBar = () => {
   onChange={event => handleInpuSearch(event.target.value)}/>
   <input type="submit" onClick={event =>click_search(event)}/> 
 </form>
-
-            
+       
     
           </div>
 

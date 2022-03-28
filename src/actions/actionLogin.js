@@ -98,16 +98,3 @@ export const logoutInitiate = () =>{
     }
 }
 
-
-
-// export const loginSincrono = (id, displayname) => {
-
-//     return{
-//        //type: types.register,
-//        type: types.login,
-//        payload: {
-//            id,
-//            displayname
-//        }
-//     }
-// }
