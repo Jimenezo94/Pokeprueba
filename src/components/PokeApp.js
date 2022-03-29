@@ -46,7 +46,7 @@ const PokeApp = () => {
     } catch (error) {
       console.log("EEER", error);
     }
-  };
+  }; 
 
   useEffect(() => {
     dispatch(loadData());
@@ -89,8 +89,8 @@ const PokeApp = () => {
                          >Add
                         </button> */}
 
-                      <button onClick={() => activateFavs(item)}>
-                        dfgdfsgdf
+                      <button style={{margin:'auto'}}onClick={() => activateFavs(item)}>
+                        Fav
                       </button>
                     </div>
                   );

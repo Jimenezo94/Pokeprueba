@@ -86,7 +86,7 @@ export const loadPokeName = (pokemonName) =>{
                     dispatch({type:addfav, payload:item})
                 }
                 catch(err){
-                    console.log('nokas')
+                    console.log('no')
 
                 }
 

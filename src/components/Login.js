@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { POKE_KEY } from '../reducers/pokemonReducer';
 
 function Login() {
- // const dispatch = useDispatch();
+ //const dispatch = useDispatch();
 
   const [email, setEmail] = useState('');
   const [password, setPassword]= useState('');
@@ -50,6 +50,7 @@ function Login() {
           <h5>E-mail</h5>
           <input
             type="text"
+            name="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />

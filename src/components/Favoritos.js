@@ -5,6 +5,7 @@ import {
   getDocs,
   updateDoc,
 } from "firebase/firestore";
+import './fav.css'
 import React, { useEffect, useState } from "react";
 import { db } from "../firebaseConfig";
 import { Modal } from "react-bootstrap";
@@ -69,13 +70,13 @@ const Favoritos = () => {
 
   return (
     <div>
-      <table className="table text-center mt-3">
-        <thead>
+      <table 
+      className="table text-center">
+        <thead >
           <tr>
-            <th scope="col">Username</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Description</th>
-            <th scope="col">Action</th>
+            <th scope="col">Peso</th>
+            <th scope="col">nombre</th>
+            <th scope="col">Altura</th>
           </tr>
         </thead>
         <tbody>
@@ -110,12 +111,12 @@ const Favoritos = () => {
           ))}
         </tbody>
       </table>
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+      <Modal show={show}>
+        <Modal.Header>
+          <Modal.Title>Editar</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <form onSubmit={(e) => onSubmit(e)}>
+          <form action="htmlForm"onSubmit={(e) => onSubmit(e)}>
             <input
               type="text"
               className="form-control mt-2"
@@ -158,6 +159,7 @@ const Favoritos = () => {
           </form>
         </Modal.Body>
       </Modal>
+     
     </div>
   );
 };
